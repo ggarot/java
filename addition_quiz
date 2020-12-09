@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Random;
+
+class Main {
+     public static void main(String[] args) {
+
+// Create random number generator
+     Random random = new Random(); 
+
+// generate two random integers
+     int number1 = random.nextInt(10);
+     int number2 = random.nextInt(10);
+
+// Create a Scanner
+     Scanner input = new Scanner(System.in);
+
+System.out.print("What is " + number1 + " + " + number2 + "? ");
+
+// user enters answer
+     int answer = input.nextInt();
+
+// print output
+     System.out.println( number1 + " + " + number2 + " = " + answer + " is " +
+           (number1 + number2 == answer));
+
+}
+}
